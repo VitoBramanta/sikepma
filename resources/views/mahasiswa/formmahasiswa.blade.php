@@ -20,7 +20,7 @@
             <div class="mb-3 row ">
                 <label for="formGroupExampleInput" class="form-label font-weight-bold col-sm-2 col-form-label">NIM</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control @error('nim') is-invalid @enderror " name="nim" required value="{{ old('nim') }}">
+                    <input autocomplete="off" type="text" class="form-control @error('nim') is-invalid @enderror " name="nim" required value="{{ old('nim') }}">
                     @error('nim')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -34,7 +34,7 @@
                 <label for="formGroupExampleInput2" class="form-label font-weight-bold col-sm-2 col-form-label">Nama
                     Mahasiswa</label>
                 <div class="col-sm-10">
-                    <input name="nama_mahasiswa" type="text" class="form-control @error('nama_mahasiswa') is-invalid @enderror " id="formGroupExampleInput2" required value="{{ old('nama_mahasiswa') }}">
+                    <input autocomplete="off" name="nama_mahasiswa" type="text" class="form-control @error('nama_mahasiswa') is-invalid @enderror " id="formGroupExampleInput2" required value="{{ old('nama_mahasiswa') }}">
                     @error('nama_mahasiswa')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -47,7 +47,7 @@
             <div class="mb-3 row">
                 <label for="formGroupExampleInput2" class="form-label font-weight-bold col-sm-2 col-form-label">Jurusan</label>
                 <div class="col-sm-10">
-                    <input name="jurusan" type="text" class="form-control @error('jurusan') is-invalid @enderror " id="formGroupExampleInput2" required value="{{ old('jurusan') }}">
+                    <input autocomplete="off" name="jurusan" type="text" class="form-control @error('jurusan') is-invalid @enderror " id="formGroupExampleInput2" required value="{{ old('jurusan') }}">
                     @error('jurusan')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -59,7 +59,7 @@
             <div class="mb-3 row">
                 <label for="formGroupExampleInput3" class="form-label font-weight-bold col-sm-2 col-form-label">Asal Instansi</label>
                 <div class="col-sm-10">
-                    <input name="asal_instansi" type="text" class="form-control @error('asal_instansi') is-invalid @enderror" id="asal_instansi" required value="{{ old('asal_instansi') }}">
+                    <input autocomplete="off" name="asal_instansi" type="text" class="form-control @error('asal_instansi') is-invalid @enderror" id="asal_instansi" required value="{{ old('asal_instansi') }}">
                     @error('asal_instansi')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -85,7 +85,7 @@
             <div class="mb-3 row">
                 <label for="formGroupExampleInput6" class="form-label font-weight-bold col-sm-2 col-form-label">Tanggal Masuk</label>
                 <div class="col-sm-10">
-                    <input type="text" name="tanggal_masuk" class="form-control datepicker @error('tanggal_masuk') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_masuk') }}">
+                    <input autocomplete="off" name="tanggal_masuk" class="form-control datepicker @error('tanggal_masuk') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_masuk') }}">
                     @error('tanggal_masuk')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -97,7 +97,7 @@
             <div class="mb-3 row">
                 <label for="formGroupExampleInput6" class="form-label font-weight-bold col-sm-2 col-form-label">Tanggal Selesai</label>
                 <div class="col-sm-10">
-                    <input name="tanggal_selesai" type="text" class="form-control datepicker @error('tanggal_selesai') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_selesai') }}">
+                    <input autocomplete="off" name="tanggal_selesai" class="form-control datepicker @error('tanggal_selesai') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_selesai') }}">
                     @error('tanggal_selesai')
                     <div class="invalid-feedback">
                         {{ $message }}
