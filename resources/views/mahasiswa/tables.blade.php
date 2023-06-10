@@ -57,27 +57,27 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($dataMahasiswa as $item)
+                    @foreach ($dataMahasiswa as $mhs)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $item->nim }}</td>
-                        <td>{{ $item->nama_mahasiswa }}</td>
-                        <td>{{ $item->jurusan }}</td>
-                        <td>{{ $item->asal_instansi }}</td>
-                        <td>{{ $item->jenis }}</td>
-                        <td>{{ $item->tanggal_masuk }}</td>
-                        <td>{{ $item->tanggal_selesai }}</td>
-                        <td>{{ $item->status }}</td>
+                        <td>{{ $mhs->nim }}</td>
+                        <td>{{ $mhs->nama_mahasiswa }}</td>
+                        <td>{{ $mhs->jurusan }}</td>
+                        <td>{{ $mhs->asal_instansi }}</td>
+                        <td>{{ $mhs->jenis }}</td>
+                        <td>{{ $mhs->tanggal_masuk }}</td>
+                        <td>{{ $mhs->tanggal_selesai }}</td>
+                        <td>{{ $mhs->status }}</td>
                         <td style="min-width: 100px;">
-                            <a class="btn btn-success btn-circle btn-sm border-0" title="Edit Data" href="{{ route('mahasiswa.edit', $item->id) }}">
+                            <a class="btn btn-success btn-circle btn-sm border-0" title="Edit Data" href="{{ route('mahasiswa.edit', $mhs->id) }}">
                                 <i class="fa fa-pencil-alt"></i>
                             </a>
-                            <a class="btn btnHapus btn-danger btn-circle btn-sm border-0" title="Hapus Data" data-toggle="modal" data-target="#hapusModal{{ $item->id }}" data-id="{{ $item->id }}">
+                            <a class="btn btnHapus btn-danger btn-circle btn-sm border-0" title="Hapus Data" data-toggle="modal" data-target="#hapusModal{{ $mhs->id }}" data-id="{{ $mhs->id }}">
                                 <i class="fas fa-trash"></i>
                             </a>
 
                             {{-- Delete Modal --}}
-                            <div class="modal fade" id="hapusModal{{ $item->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="hapusModal{{ $mhs->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -91,7 +91,7 @@
                                         <div class="modal-footer">
 
                                             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                            <form id="formHapusModal" action="" class="d-inline" method="post">
+                                            <form id="formHapusModal" action="{{ route('mahasiswa.destroy', $mhs->id) }}" class="d-inline" method="post">
                                                 @method('delete')
                                                 @csrf
                                                 <button class="btn btn-primary" type="submit">Hapus
