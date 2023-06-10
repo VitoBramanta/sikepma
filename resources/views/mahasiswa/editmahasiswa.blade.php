@@ -85,7 +85,7 @@
             <div class="mb-3 row">
                 <label for="formGroupExampleInput6" class="form-label font-weight-bold col-sm-2 col-form-label">Tanggal Masuk</label>
                 <div class="col-sm-10">
-                    <input name="tanggal_masuk" class="form-control datepicker @error('tanggal_masuk') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_masuk', $mahasiswa->tanggal_masuk) }}">
+                    <input readonly name="tanggal_masuk" class="form-control datepicker @error('tanggal_masuk') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_masuk', $mahasiswa->tanggal_masuk) }}">
                     @error('tanggal_masuk')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -97,7 +97,7 @@
             <div class="mb-3 row">
                 <label for="formGroupExampleInput6" class="form-label font-weight-bold col-sm-2 col-form-label">Tanggal Selesai</label>
                 <div class="col-sm-10">
-                    <input name="tanggal_selesai" class="form-control datepicker @error('tanggal_selesai') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_selesai', $mahasiswa->tanggal_selesai) }}">
+                    <input readonly name="tanggal_selesai" class="form-control datepicker @error('tanggal_selesai') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_selesai', $mahasiswa->tanggal_selesai) }}">
                     @error('tanggal_selesai')
                     <div class="invalid-feedback">
                         {{ $message }}

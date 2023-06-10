@@ -21,7 +21,7 @@
       <div class="mb-3 row">
         <label for="formGroupExampleInput2" class="form-label font-weight-bold col-sm-2 col-form-label">Nama Lengkap</label>
         <div class="col-sm-10">
-          <input name="nama" type="text" class="form-control @error('nama') is-invalid @enderror " id="formGroupExampleInput2">
+          <input autocomplete="off" name="nama" type="text" class="form-control @error('nama') is-invalid @enderror " id="formGroupExampleInput2">
           @error('nama')
           <div class="invalid-feedback">
             {{$message}}
@@ -33,7 +33,7 @@
       <div class="mb-3 row">
         <label for="formGroupExampleInput2" class="form-label font-weight-bold col-sm-2 col-form-label">Username</label>
         <div class="col-sm-10">
-          <input name="username" type="text" class="form-control @error('username') is-invalid @enderror " id="formGroupExampleInput2">
+          <input autocomplete="off" name="username" type="text" class="form-control @error('username') is-invalid @enderror " id="formGroupExampleInput2">
           @error('username')
           <div class="invalid-feedback">
             {{$message}}
