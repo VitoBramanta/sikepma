@@ -167,14 +167,4 @@ class MahasiswaController extends Controller
     {
         return FacadesExcel::download(new MahasiswaExport, 'mahasiswa.xlsx');
     }
-    public function import()
-    {
-        try {
-
-            FacadesExcel::import(new MahasiswaImport, request()->file('file'));
-            return redirect()->back()->with('sukses', 'Import barang Berhasil');
-        } catch (\Throwable $th) {
-            return redirect()->back()->withErrors('Gagal, Pastikan Import Data Anda Sesuai');
-        }
-    }
 }
