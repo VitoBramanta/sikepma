@@ -106,7 +106,6 @@ class MahasiswaController extends Controller
      */
     public function edit(mahasiswa $mahasiswa)
     {
-        //
         $data = [
             'mahasiswa' => $mahasiswa,
         ];
