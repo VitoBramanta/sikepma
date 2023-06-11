@@ -162,9 +162,4 @@ class MahasiswaController extends Controller
 
         return redirect()->route('mahasiswa.index')->with('delete', 'Data Berhasil dihapus');
     }
-
-    public function export()
-    {
-        return FacadesExcel::download(new MahasiswaExport, 'mahasiswa.xlsx');
-    }
 }
