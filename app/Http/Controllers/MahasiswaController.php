@@ -48,11 +48,8 @@ class MahasiswaController extends Controller
      */
     public function create()
     {
-        //
 
         $data = [];
-
-
 
         return view('mahasiswa.formmahasiswa', $data);
     }
