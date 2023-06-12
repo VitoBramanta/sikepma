@@ -93,7 +93,7 @@
             <li class="nav-item {{ Request::is('user') ? 'active' : '' }}">
                 <a class="nav-link" href="/user">
                     <i class="fas fa-user"></i>
-                    <span>Managemen User</span></a>
+                    <span>Manajemen User</span></a>
             </li>
             @endif
             <!-- Nav Item - Tables -->
