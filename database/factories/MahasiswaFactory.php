@@ -20,7 +20,6 @@ class MahasiswaFactory extends Factory
             'nama_mahasiswa' => $this->faker->word,
             'jurusan' => $this->faker->word,
             'asal_instansi' => $this->faker->word,
-            'jenis' => $this->faker->word,
             'tanggal_masuk' => $this->faker->date,
             'tanggal_selesai' => $this->faker->date,
             'status' => 'Belum Selesai',

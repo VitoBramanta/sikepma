@@ -69,20 +69,6 @@
             </div>
 
             <div class="mb-3 row">
-                <label for="formGroupExampleInput2" class="form-label font-weight-bold col-sm-2 col-form-label">Jenis</label>
-                <div class="col-sm-10">
-                    <select class="custom-select" name="jenis" required>
-                        <option value="">---- Pilih Jenis ----</option>
-                        <option {{ old('jenis' ) == 'KP' ? 'selected' : '' }} value="KP">
-                            KP
-                        </option>
-                        <option {{ old('jenis' ) == 'Magang' ? 'selected' : '' }} value="Magang">
-                            Magang</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="mb-3 row">
                 <label for="formGroupExampleInput6" class="form-label font-weight-bold col-sm-2 col-form-label">Tanggal Masuk</label>
                 <div class="col-sm-10">
                     <input readonly autocomplete="off" name="tanggal_masuk" class="form-control datepicker @error('tanggal_masuk') is-invalid @enderror" id="datepicker" required value="{{ old('tanggal_masuk') }}">

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sistem Informasi Kerja Praktek dan Magang</title>
+    <title>Sistem Informasi Magang</title>
 
     <!-- Custom fonts for this template -->
     <link href={{ asset('vendor/fontawesome-free/css/all.min.css') }} rel="stylesheet" type="text/css">
@@ -38,7 +38,7 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
-                <div class="sidebar-brand-text mx-3">SiKePMa</div>
+                <div class="sidebar-brand-text mx-3">SiMa</div>
             </a>
 
             <!-- Divider -->
@@ -84,7 +84,7 @@
             <li class="nav-item {{ Request::is('mahasiswa*') ? 'active' : '' }}">
                 <a class="nav-link" href="/mahasiswa">
                     <i class="fas fa-warehouse"></i>
-                    <span>Data KP dan Magang</span></a>
+                    <span>Data Magang</span></a>
             </li>
 
 

@@ -31,7 +31,7 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
     <div class="card-header py-3 justify-content-between d-flex">
-        <h6 class="m-0 font-weight-bold text-primary d-inline-block align-self-center">Data Informasi Kerja Praktek dan Magang</h6>
+        <h6 class="m-0 font-weight-bold text-primary d-inline-block align-self-center">Data Informasi Magang</h6>
         <div>
             <a href="{{ route('mahasiswa.create') }}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mx-3" data-toggle="tooltip" data-placement="top" title="Tambah Data" style="height: 100%"><i class="fas fa-plus fa-sm-w-20 text-white-50 mr-2 "></i>Tambah Data</a>
 
@@ -49,7 +49,6 @@
                         <th>Nama Mahasiswa</th>
                         <th>Jurusan</th>
                         <th>Asal Instansi</th>
-                        <th>Jenis</th>
                         <th>Tanggal Masuk</th>
                         <th>Tanggal Selesai</th>
                         <th>Status</th>
@@ -64,7 +63,6 @@
                         <td>{{ $mhs->nama_mahasiswa }}</td>
                         <td>{{ $mhs->jurusan }}</td>
                         <td>{{ $mhs->asal_instansi }}</td>
-                        <td>{{ $mhs->jenis }}</td>
                         <td>{{ $mhs->tanggal_masuk }}</td>
                         <td>{{ $mhs->tanggal_selesai }}</td>
                         <td>{{ $mhs->status }}</td>

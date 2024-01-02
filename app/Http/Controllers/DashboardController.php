@@ -16,7 +16,7 @@ class DashboardController extends Controller
     public function index()
     {
         $data = [
-            'jumlahkp' => mahasiswa::where(['jenis' => 'KP'])->count(), 'jumlahmagang' => mahasiswa::where(['jenis' => 'Magang'])->count(), 'jumlahbelumselesaikp' => mahasiswa::where(['jenis' => 'KP'])->where(['status' => 'Belum Selesai'])->count(), 'jumlahbelumselesaimagang' => mahasiswa::where(['jenis' => 'Magang'])->where(['status' => 'Belum Selesai'])->count(), 'jumlahselesaikp' => mahasiswa::where(['jenis' => 'KP'])->where(['status' => 'Selesai'])->count(), 'jumlahselesaimagang' => mahasiswa::where(['jenis' => 'Magang'])->where(['status' => 'Selesai'])->count(),
+            'jumlahmagang' => mahasiswa::where(['jenis' => 'Magang'])->count(), 'jumlahbelumselesaimagang' => mahasiswa::where(['jenis' => 'Magang'])->where(['status' => 'Belum Selesai'])->count(), 'jumlahselesaimagang' => mahasiswa::where(['jenis' => 'Magang'])->where(['status' => 'Selesai'])->count(),
         ];
         //dd($data);
         return view('dashboard.dashboard', $data);

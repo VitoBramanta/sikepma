@@ -19,7 +19,6 @@ class CreateMahasiswaTable extends Migration
             $table->string('nama_mahasiswa');
             $table->string('jurusan');
             $table->string('asal_instansi');
-            $table->enum('jenis', ['KP', 'Magang']);
             $table->date('tanggal_masuk');
             $table->date('tanggal_selesai');
             $table->enum('status', ['Belum Selesai', 'Selesai']);
