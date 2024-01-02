@@ -49,7 +49,7 @@
 
         <form action="/login" method="POST">
             @csrf
-            <h1 class="h3 mb-3 fw-normal">Sistem Informasi Kerja Praktek</h1>
+            <h1 class="h3 mb-3 fw-normal">Sistem Informasi Magang</h1>
             {{-- Alert Logout --}}
             @if (session()->has('loginError'))
             <div class="alert alert-danger alert dismissible fade show" role="alert">
@@ -78,7 +78,7 @@
             </div>
 
             <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-            <p class="mt-5 mb-3 text-muted">&copy; Firmos 2023</p>
+            <p class="mt-5 mb-3 text-muted">&copy;BPJS Kesehatan 2023</p>
         </form>
 </main>
 
